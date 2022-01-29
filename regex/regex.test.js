@@ -6,8 +6,9 @@
 characters (no numbers and symbols) and it should end with capital A else return false */
 
 function capitalA(s){
+    let validation = /[A-Z]\w+ \w+ (A)/
     // Add your logic.
-    return;
+    return validation.test(s);
 }
 
 
@@ -15,8 +16,9 @@ function capitalA(s){
 which end with io (example@example.io) */
 
 function ioEmail(email){
-    // Add your logic.
-    return;
+    let validation = /^\w+(@)\w+.(io)$/
+    // Add your logic. 
+    return validation.test(email);
 }
 
 /* You have a text that contain image names with their extention you need to write a function to 
