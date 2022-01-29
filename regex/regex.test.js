@@ -27,7 +27,14 @@ required extention are jpg, jpeg and png.
 */
 
 function imagesSearcher(text){
+    
     let arr = [];
+    for(i=0;i<3;i++){
+    let validation = /^\w+.jpg|\w+.png|\w+.jpeg$/gi
+    // let nextImg = 
+    arr[i] = text.match(validation)
+    text.search(validation)
+    }
     // Add your logic.
     return arr
 }
